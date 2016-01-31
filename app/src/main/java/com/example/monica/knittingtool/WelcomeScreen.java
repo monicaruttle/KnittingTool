@@ -1,5 +1,6 @@
 package com.example.monica.knittingtool;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -8,6 +9,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Button;
 
 public class WelcomeScreen extends AppCompatActivity {
 
@@ -26,7 +28,20 @@ public class WelcomeScreen extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
+
+       /* Button start = (Button) findViewById(R.id.startButton);
+        start.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v){
+                startCreation();
+            }
+        });*/
     }
+
+   /* private void startCreation(){
+        Intent intent = new Intent(this, CreatePattern.class);
+        startActivity(intent);
+    }*/
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
